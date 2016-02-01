@@ -48,7 +48,6 @@ public abstract class BaseRequestSender implements IRequestSender {
      * @throws IOException
      */
     public void getResponse(StringBuilder sb) throws IOException {
-
         // checks server's status code first
         int status = mHttpURLConnection.getResponseCode();
         if (status == HttpURLConnection.HTTP_OK) {
